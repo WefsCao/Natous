@@ -3,6 +3,10 @@
   margin: 0 auto;
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
+    }
   }
 
   @include respond(tab-port) {
